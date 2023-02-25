@@ -1,0 +1,78 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:backgroundTint="#D3E0EA"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="20dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txt_new_task"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:maxLines="3"
+            android:text="task of today is "
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/check_box"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+
+            android:buttonTint="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.881"
+            app:layout_constraintStart_toEndOf="@id/txt_new_task"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/txt_priority"/>
+
+        <!--        <TextView-->
+<!--            android:id="@+id/txt_date"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="44dp"-->
+<!--            android:text="date"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/txt_new_task" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_time"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:text="time"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/txt_date" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
